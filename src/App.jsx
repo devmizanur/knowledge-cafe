@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
+import Header from './components/Header/Header'
 
 function App() {
 
 
   return (
     <>
-
-      <h1 className='text-3xl font-bold text-green-400'>Knowledge Cafe</h1>
+  <Header></Header>
+  <div className='flex'>
+  <Blogs></Blogs>
+  <Bookmarks></Bookmarks>
+    </div>
 
     </>
   )
